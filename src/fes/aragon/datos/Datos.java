@@ -3,35 +3,88 @@ package fes.aragon.datos;
 public class Datos {
 	
 	private String nombre;
-	private float numeroUno;
-	private int numeroDos;
+	private String apellidoPaterno;
+	private String apellidoMaterno;
+	private String sexo;
+	private String telefono;
+	private String codigoPostal;
+	private String estadoCivil;
+	private String direccion;
+	
 	public Datos() {
 		// TODO Auto-generated constructor stub
 	}
+	
 	public String getNombre() {
 		return nombre;
 	}
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public float getNumeroUno() {
-		return numeroUno;
+	
+	public String getApellidoPaterno() {
+		return apellidoPaterno;
 	}
-	public void setNumeroUno(float numeroUno) {
-		this.numeroUno = numeroUno;
+	
+	public void setApellidoPaterno(String apellidoPaterno) {
+		this.apellidoPaterno = apellidoPaterno;
 	}
-	public int getNumeroDos() {
-		return numeroDos;
+	
+	public String getApellidoMaterno() {
+		return apellidoMaterno;
 	}
-	public void setNumeroDos(int numeroDos) {
-		this.numeroDos = numeroDos;
+	
+	public void setApellidoMaterno(String apellidoMaterno) {
+		this.apellidoMaterno = apellidoMaterno;
 	}
+	
+	public String getSexo() {
+		return sexo;
+	}
+	
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+	
+	public String getTelefono() {
+		return telefono;
+	}
+	
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+	
+	public String getCodigoPostal() {
+		return codigoPostal;
+	}
+	
+	public void setCodigoPostal(String codigoPostal) {
+		this.codigoPostal = codigoPostal;
+	}
+	
+	public String getEstadoCivil() {
+		return estadoCivil;
+	}
+	
+	public void setEstadoCivil(String estadoCivil) {
+		this.estadoCivil = estadoCivil;
+	}
+	
+	public String getDireccion() {
+		return direccion;
+	}
+	
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+	
 	@Override
 	public String toString() {
-		return "Datos [nombre=" + nombre + ", numeroUno=" + numeroUno
-				+ ", numeroDos=" + numeroDos + "]";
+		return "Datos [nombre=" + nombre + ", apellidoPaterno="
+				+ apellidoPaterno + ", apellidoMaterno=" + apellidoMaterno
+				+ ", sexo=" + sexo + ", telefono=" + telefono
+				+ ", codigoPostal=" + codigoPostal + ", estadoCivil="
+				+ estadoCivil + ", direccion=" + direccion + "]";
 	}
-	
-	
-
 }

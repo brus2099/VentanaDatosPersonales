@@ -21,9 +21,6 @@ public class Archivo {
 	public String getRuta() {
 		return ruta;
 	}
-	public void setRuta(String ruta) {
-		this.ruta = ruta;
-	}
 	public ArrayList<Datos> getDatos() {
 		return datos;
 	}
@@ -38,8 +35,13 @@ public class Archivo {
 				String [] arg=cad.split(";");
 				Datos dat=new Datos();
 				dat.setNombre(arg[0]);
-				dat.setNumeroUno(Float.parseFloat(arg[1]));
-				dat.setNumeroDos(Integer.parseInt(arg[2]));
+				dat.setApellidoPaterno(arg[1]);
+				dat.setApellidoMaterno(arg[2]);
+				dat.setSexo(arg[3]);
+				dat.setTelefono(arg[4]);
+				dat.setCodigoPostal(arg[5]);
+				dat.setEstadoCivil(arg[6]);
+				dat.setDireccion(arg[7]);
 				this.datos.add(dat);
 			}
 			
